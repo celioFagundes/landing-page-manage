@@ -15,6 +15,7 @@ function myFunction() {
     links.className += " responsive";
     btn.className += " responsive";
     body.style.backgroundImage = "linear-gradient(to bottom, "+ '#fff' +", "+ '#000' +")"
+    body.style.transition = ' 0.4s'
   } else {
     links.className = "links";
     btn.className = "menu-icon";

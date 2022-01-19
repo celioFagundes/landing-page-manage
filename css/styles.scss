@@ -9,15 +9,15 @@ body {
   min-height: 100vh;
   width: 100%;
   font-family: 'Be Vietnam Pro', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   background: url('/images/bg-simplify-section-desktop.svg');
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 40px;
 }
 .container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .topheader {
   display: flex;
@@ -45,6 +45,9 @@ body {
   color: $primaryBlue;
   font-size: 16px;
 }
+.links li a:hover {
+  color: $darkGrayishBlue;
+}
 .logo {
   padding-top: 10px;
 }
@@ -55,6 +58,10 @@ body {
   border: 0;
   border-radius: 20px;
   font-weight: bold;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: $hoverOrange;
 }
 .menu-icon {
   display: none;
@@ -64,10 +71,83 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+main {
+  padding-top: 50px;
+}
+.introduction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+h1 {
+  font-size: 48px;
+  color: $primaryBlue;
+}
+.introduction header {
+  max-width: 500px;
+}
+.introduction header p {
+  color: $darkGrayishBlue;
+  max-width: 380px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.introduction figure img {
+  height: 400px;
+}
+h2 {
+  color: $primaryBlue;
+}
+.about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+.about header p {
+  color: $darkGrayishBlue;
+  font-weight: 400;
+  margin: 20px 0;
+  max-width: 400px;
+}
+.about-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  max-width: 450px;
+}
+.item-id {
+  background-color: $primaryRed;
+  color: white;
+  padding: 8px 20px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+h3{ 
+    font-size: 16px;
+    color: $primaryBlue;
+}
+.item-description{
+    margin-left: 20px;
+    padding-top: 7px;
+}
+.item-description p{
+    margin-top: 10px;
+    color: $darkGrayishBlue;
+}
 
 @media (max-width: 1200px) {
   .container {
-    padding: 0px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about.container{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media (max-width: 800px) {
@@ -94,13 +174,81 @@ body {
     border-radius: 5px;
   }
   .links li {
-      padding: 20px 0 ;
+    padding: 20px 0;
   }
-  .links.responsive{
+  .links.responsive {
     display: block;
     right: 5%;
   }
-  .menu-icon.responsive{
-      background-image: url(/images/icon-close.svg);
+  .menu-icon.responsive {
+    background-image: url(/images/icon-close.svg);
   }
+  .introduction {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  .introduction header p {
+    max-width: none;
+  }
+  .about{
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+  }
+  .about header{
+      padding: 0 20px;
+  }
+  .about header h2, .about header p{
+      text-align: center;
+  }
+  
+  
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 32px;
+  }
+  .introduction figure img {
+    height: 300px;
+  }
+  .about-list{
+    width: 100%;
+    padding: 0;
+}
+.about-item{
+    position: relative;
+    width: 100%;
+    max-width: none;
+    padding-bottom: 40px;
+}
+.item-id{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 1000;
+    padding: 10px 25px;
+    
+}
+.item-description{
+    padding-top: 0;
+    margin-left: 0;
+    position: relative;
+    width: 100%;
+    
+}
+.item-description h3{
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 100%;
+  background-color: $veryPaleRed;
+  padding: 10px 0px 6px 30px;
+}
+.item-description p {
+    position: relative;
+    top: 40px;
+    left: 30px;
+}
 }
