@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 700;
+  background: url("/images/bg-simplify-section-desktop.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.topheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.links li {
+  margin-right: 30px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #242d52;
+  font-size: 16px;
+}
+
+.logo {
+  padding-top: 10px;
+}
+
+.btn {
+  background-color: #f25f3a;
+  color: white;
+  padding: 12px 25px;
+  border: 0;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  background-image: url("/images/icon-hamburger.svg");
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .topnav .btn {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .links {
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 90%;
+    right: -250%;
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    top: 100px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 5px;
+  }
+  .links li {
+    padding: 20px 0;
+  }
+  .links.responsive {
+    display: block;
+    right: 5%;
+  }
+  .menu-icon.responsive {
+    background-image: url(/images/icon-close.svg);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
