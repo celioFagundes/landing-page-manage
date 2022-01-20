@@ -207,7 +207,9 @@ li.slick-active button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
 }
 .top-footer div h2 {
   color: #fff;
@@ -230,6 +232,7 @@ li.slick-active button {
 .bfooter-box {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   height: 150px;
   justify-content: space-between;
   padding: 30px 0;
@@ -246,7 +249,7 @@ li.slick-active button {
     }
   }
 }
-.links {
+.footer-links {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -273,7 +276,7 @@ li.slick-active button {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  form{
+  form {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -287,7 +290,7 @@ li.slick-active button {
       cursor: pointer;
       margin-right: 15px;
     }
-    .error{
+    .error {
       position: absolute;
       top: 43px;
       left: 12px;
@@ -297,12 +300,11 @@ li.slick-active button {
       display: none;
     }
   }
-  .copyright{
+  .copyright {
     font-size: 10px;
     align-self: flex-end;
     color: $darkGrayishBlue;
   }
-  
 }
 
 @media (max-width: 1200px) {
@@ -368,6 +370,52 @@ li.slick-active button {
   .about header h2,
   .about header p {
     text-align: center;
+  }
+
+  @media (max-width: 700px) {
+    .bfooter-box {
+      height: 100%;
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 100%;
+      padding: 70px 0;
+      position: relative;
+    }
+    .contacts {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .social-medias {
+        padding-top: 0;
+        width: 70%;
+        margin-bottom: 40px;
+      }
+    }
+    .footer-links {
+      margin: 40px 0;
+      width: 60%;
+    }
+
+    .copyright {
+      position: absolute;
+      width: 200px;
+      bottom: 10px;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      align-self: center;
+    }
+  }
+  @media (max-width: 600px) {
+    .top-footer div {
+      justify-content: center;
+      text-align: center;
+      h2 {
+        margin: 20px 0;
+      }
+    }
   }
 }
 @media (max-width: 450px) {
