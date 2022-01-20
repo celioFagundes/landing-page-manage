@@ -306,6 +306,18 @@ li.slick-active button {
     color: $darkGrayishBlue;
   }
 }
+.attribution{
+  background-color: #1E1E24;
+  text-align: center;
+  color: $darkGrayishBlue;
+  font-size: 8px;
+  a{
+    
+    text-decoration: none;
+    color: $darkGrayishBlue;
+    
+  }
+}
 
 @media (max-width: 1200px) {
   .container {

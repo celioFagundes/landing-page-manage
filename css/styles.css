@@ -445,6 +445,18 @@ li.slick-active button {
   color: #9095a7;
 }
 
+.attribution {
+  background-color: #1E1E24;
+  text-align: center;
+  color: #9095a7;
+  font-size: 8px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #9095a7;
+}
+
 @media (max-width: 1200px) {
   .container {
     padding-left: 20px;
