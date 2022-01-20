@@ -1,11 +1,22 @@
 $('.slider').slick({
     dots:false,
-    infinite:false,
-    speed: 300,
+    infinite:true,
+    speed: 100,
     slidesToShow: 1,
-    variableWidth: false,
-    centerMode: true,
-    arrows: false
+    slidesToScroll:1,
+    variableWidth: true,
+    centerMode: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          centerMode:true,
+          centerPadding : '20px',
+          dots:true,
+        }
+      },
+    ]
 });
 function myFunction() {
   let links = document.getElementById("myTopnav");
