@@ -237,6 +237,10 @@ h3 {
   color: #9095a7;
 }
 
+.testimonials .btn {
+  margin: 20px;
+}
+
 .slick-dots {
   margin: 0 auto;
   width: 50%;
@@ -262,6 +266,178 @@ h3 {
 
 li.slick-active button {
   background-color: #f25f3a;
+}
+
+.top-footer {
+  background-color: #f25f3a;
+  margin-top: 100px;
+}
+
+.top-footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+.top-footer div h2 {
+  color: #fff;
+}
+
+.top-footer-button {
+  background-color: #fff;
+  color: #f25f3a;
+  padding: 12px 25px;
+  border: 0;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.top-footer-button:hover {
+  color: #F98F75;
+}
+
+.bottom-footer {
+  background-color: #1d1e25;
+}
+
+.bfooter-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+
+.social-medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 35px;
+}
+
+.social-medias svg:hover {
+  cursor: pointer;
+}
+
+.social-medias svg:hover path {
+  fill: #f25f3a;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.links a:hover {
+  color: #f25f3a;
+}
+
+.links div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.signin form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.signin form input {
+  background-color: #fff;
+  padding: 12px 12px;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.signin form .error {
+  position: absolute;
+  top: 43px;
+  left: 12px;
+  color: red;
+  font-size: 12px;
+  font-style: italic;
+  display: none;
+}
+
+.signin .copyright {
+  font-size: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #9095a7;
 }
 
 @media (max-width: 1200px) {

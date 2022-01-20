@@ -143,7 +143,6 @@ h3 {
 .testimonials {
   text-align: center;
   margin: 30px 0;
-  
 }
 
 .slider-item {
@@ -156,7 +155,6 @@ h3 {
   margin-top: 80px;
   margin-bottom: 10px;
   border-radius: 5px;
-  
 }
 
 .slider-item figure img {
@@ -167,39 +165,144 @@ h3 {
   transform: translate(-50%, -50%);
   height: 60px;
   z-index: 2000;
-  
 }
 .slider-item p {
   margin-top: 10px;
   flex-grow: 1;
   color: $darkGrayishBlue;
 }
-.slick-dots{
-  margin:0 auto;
+.testimonials .btn {
+  margin: 20px;
+}
+.slick-dots {
+  margin: 0 auto;
   width: 50%;
   margin-bottom: 30px;
-   
 }
-.slick-dots li{
+.slick-dots li {
   display: inline-block;
   padding-left: 15px;
   border: transparent;
 }
-.slick-dots li button{
+.slick-dots li button {
   display: inline-block;
   height: 12px;
   width: 12px;
   font-size: 0px;
   border: 3px solid $primaryRed;
   border-radius: 50%;
-  
+
   background-color: transparent;
-  
+
   cursor: pointer;
-  
 }
-li.slick-active button{
-  background-color: $primaryRed;    
+li.slick-active button {
+  background-color: $primaryRed;
+}
+.top-footer {
+  background-color: $primaryRed;
+  margin-top: 100px;
+}
+.top-footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.top-footer div h2 {
+  color: #fff;
+}
+.top-footer-button {
+  background-color: #fff;
+  color: $primaryRed;
+  padding: 12px 25px;
+  border: 0;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.top-footer-button:hover {
+  color: $hoverOrange;
+}
+.bottom-footer {
+  background-color: $veryDarkBlue;
+}
+.bfooter-box {
+  display: flex;
+  align-items: flex-start;
+  height: 150px;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.social-medias {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+  svg:hover {
+    cursor: pointer;
+    path {
+      fill: $primaryRed;
+    }
+  }
+}
+.links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 30%;
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 0;
+    &:hover {
+      color: $primaryRed;
+    }
+  }
+  div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+.signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    input {
+      background-color: #fff;
+      padding: 12px 12px;
+      border: 0;
+      border-radius: 20px;
+      outline: none;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+    .error{
+      position: absolute;
+      top: 43px;
+      left: 12px;
+      color: red;
+      font-size: 12px;
+      font-style: italic;
+      display: none;
+    }
+  }
+  .copyright{
+    font-size: 10px;
+    align-self: flex-end;
+    color: $darkGrayishBlue;
+  }
+  
 }
 
 @media (max-width: 1200px) {
@@ -272,7 +375,7 @@ li.slick-active button{
     font-size: 32px;
   }
   .introduction figure img {
-    height:300px;
+    height: 300px;
   }
   .about-list {
     width: 100%;
@@ -302,7 +405,7 @@ li.slick-active button{
     top: 0;
     left: 60px;
     font-size: 14px;
-    width:calc(100% - 60px);
+    width: calc(100% - 60px);
     background-color: $veryPaleRed;
     padding: 10px 0px 6px 30px;
     overflow: hidden;
@@ -315,7 +418,6 @@ li.slick-active button{
   }
   .slider-item p {
     max-width: 300px;
-    
   }
 }
 @media (max-width: 350px) {
@@ -323,10 +425,9 @@ li.slick-active button{
     font-size: 28px;
   }
   .introduction figure img {
-    height:250px;
+    height: 250px;
   }
   .slider-item p {
     max-width: 250px;
-    
   }
 }
