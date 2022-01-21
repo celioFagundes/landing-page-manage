@@ -34,7 +34,7 @@ body {
   width: 100%;
 }
 
-.topnav {
+.topheader .topnav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,11 @@ body {
   width: 100%;
 }
 
-.links {
+.topheader .topnav .logo {
+  padding-top: 10px;
+}
+
+.topheader .topnav .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,22 +64,18 @@ body {
   list-style: none;
 }
 
-.links li {
+.topheader .topnav .links li {
   margin-right: 30px;
 }
 
-.links li a {
+.topheader .topnav .links a {
   text-decoration: none;
   color: #242d52;
   font-size: 16px;
 }
 
-.links li a:hover {
+.topheader .topnav .links a:hover {
   color: #9095a7;
-}
-
-.logo {
-  padding-top: 10px;
 }
 
 .btn {
@@ -117,23 +117,23 @@ main {
           justify-content: space-between;
 }
 
-h1 {
-  font-size: 48px;
-  color: #242d52;
-}
-
 .introduction header {
   max-width: 500px;
 }
 
-.introduction header p {
+.introduction p {
   color: #9095a7;
   max-width: 380px;
   font-weight: 400;
   margin: 20px 0;
 }
 
-.introduction figure img {
+.introduction h1 {
+  font-size: 48px;
+  color: #242d52;
+}
+
+.introduction img {
   height: 400px;
 }
 
@@ -162,7 +162,7 @@ h2 {
   max-width: 400px;
 }
 
-.about-item {
+.about .about-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +176,7 @@ h2 {
   max-width: 450px;
 }
 
-.item-id {
+.about .about-item .item-id {
   background-color: #f25f3a;
   color: white;
   padding: 8px 20px;
@@ -186,19 +186,20 @@ h2 {
   font-weight: bold;
 }
 
-h3 {
-  font-size: 16px;
-  color: #242d52;
-}
-
-.item-description {
+.about .about-item .item-description {
   margin-left: 20px;
   padding-top: 7px;
 }
 
-.item-description p {
+.about .about-item .item-description p {
+  font-weight: 400;
   margin-top: 10px;
   color: #9095a7;
+}
+
+h3 {
+  font-size: 16px;
+  color: #242d52;
 }
 
 .testimonials {
@@ -206,7 +207,7 @@ h3 {
   margin: 30px 0;
 }
 
-.slider-item {
+.testimonials .slider-item {
   min-height: 200px;
   max-width: 500px;
   background-color: #fafafa;
@@ -218,7 +219,11 @@ h3 {
   border-radius: 5px;
 }
 
-.slider-item figure img {
+.testimonials .slider-item .btn {
+  margin: 20px;
+}
+
+.testimonials .slider-item img {
   position: absolute;
   top: -5px;
   z-index: 1000;
@@ -229,16 +234,10 @@ h3 {
   z-index: 2000;
 }
 
-.slider-item p {
+.testimonials .slider-item p {
   margin-top: 10px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  font-weight: 400;
   color: #9095a7;
-}
-
-.testimonials .btn {
-  margin: 20px;
 }
 
 .slick-dots {
@@ -253,7 +252,7 @@ h3 {
   border: transparent;
 }
 
-.slick-dots li button {
+.slick-dots button {
   display: inline-block;
   height: 12px;
   width: 12px;
@@ -264,7 +263,7 @@ h3 {
   cursor: pointer;
 }
 
-li.slick-active button {
+.slick-dots .slick-active button {
   background-color: #f25f3a;
 }
 
@@ -289,11 +288,11 @@ li.slick-active button {
       flex-wrap: wrap;
 }
 
-.top-footer div h2 {
+.top-footer h2 {
   color: #fff;
 }
 
-.top-footer-button {
+.top-footer button {
   background-color: #fff;
   color: #f25f3a;
   padding: 12px 25px;
@@ -303,7 +302,7 @@ li.slick-active button {
   cursor: pointer;
 }
 
-.top-footer-button:hover {
+.top-footer button:hover {
   color: #F98F75;
 }
 
@@ -311,7 +310,7 @@ li.slick-active button {
   background-color: #1d1e25;
 }
 
-.bfooter-box {
+.bottom-footer .bfooter-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,10 +323,11 @@ li.slick-active button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.social-medias {
+.bottom-footer .social-medias {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,15 +340,15 @@ li.slick-active button {
   padding-top: 35px;
 }
 
-.social-medias svg:hover {
+.bottom-footer .social-medias svg:hover {
   cursor: pointer;
 }
 
-.social-medias svg:hover path {
+.bottom-footer .social-medias svg:hover path {
   fill: #f25f3a;
 }
 
-.footer-links {
+.bottom-footer .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,18 +361,18 @@ li.slick-active button {
   width: 30%;
 }
 
-.footer-links a {
+.bottom-footer .footer-links a {
   color: #fff;
   text-decoration: none;
   font-size: 12px;
   padding: 5px 0;
 }
 
-.footer-links a:hover {
+.bottom-footer .footer-links a:hover {
   color: #f25f3a;
 }
 
-.footer-links div {
+.bottom-footer .footer-links div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,7 +388,7 @@ li.slick-active button {
           flex-direction: column;
 }
 
-.signin {
+.bottom-footer .signin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +405,7 @@ li.slick-active button {
   height: 100%;
 }
 
-.signin form {
+.bottom-footer .signin form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,7 +418,7 @@ li.slick-active button {
   position: relative;
 }
 
-.signin form input {
+.bottom-footer .signin form input {
   background-color: #fff;
   padding: 12px 12px;
   border: 0;
@@ -428,7 +428,7 @@ li.slick-active button {
   margin-right: 15px;
 }
 
-.signin form .error {
+.bottom-footer .signin form .error {
   position: absolute;
   top: 43px;
   left: 12px;
@@ -438,7 +438,7 @@ li.slick-active button {
   display: none;
 }
 
-.signin .copyright {
+.bottom-footer .signin .copyright {
   font-size: 10px;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -446,7 +446,7 @@ li.slick-active button {
 }
 
 .attribution {
-  background-color: #1E1E24;
+  background-color: #1e1e24;
   text-align: center;
   color: #9095a7;
   font-size: 8px;
@@ -458,7 +458,8 @@ li.slick-active button {
 }
 
 @media (max-width: 1200px) {
-  .container {
+  .container,
+  .bfooter-box {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -523,7 +524,7 @@ li.slick-active button {
             justify-content: center;
     text-align: center;
   }
-  .introduction header p {
+  .introduction p {
     max-width: none;
   }
   .about {
@@ -537,15 +538,14 @@ li.slick-active button {
   .about header {
     padding: 0 20px;
   }
-  .about header h2,
-  .about header p {
+  .about header h2, .about header p {
     text-align: center;
   }
 }
 
 @media (max-width: 800px) and (max-width: 700px) {
-  .bfooter-box {
-    height: 100%;
+  .bottom-footer .bfooter-box {
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -554,10 +554,9 @@ li.slick-active button {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding: 70px 0;
     position: relative;
   }
-  .contacts {
+  .bottom-footer .bfooter-box .contacts {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -573,16 +572,16 @@ li.slick-active button {
             justify-content: space-between;
     width: 100%;
   }
-  .contacts .social-medias {
+  .bottom-footer .bfooter-box .contacts .social-medias {
     padding-top: 0;
     width: 70%;
     margin-bottom: 40px;
   }
-  .footer-links {
+  .bottom-footer .bfooter-box .footer-links {
     margin: 40px 0;
     width: 60%;
   }
-  .copyright {
+  .bottom-footer .bfooter-box .copyright {
     position: absolute;
     width: 200px;
     bottom: 10px;
@@ -603,42 +602,42 @@ li.slick-active button {
             justify-content: center;
     text-align: center;
   }
-  .top-footer div h2 {
+  .top-footer h2 {
     margin: 20px 0;
   }
 }
 
 @media (max-width: 450px) {
-  h1 {
-    font-size: 32px;
-  }
-  .introduction figure img {
+  .introduction img {
     height: 300px;
   }
-  .about-list {
+  .introduction h1 {
+    font-size: 32px;
+  }
+  .about .about-list {
     width: 100%;
     padding: 0;
   }
-  .about-item {
+  .about .about-item {
     position: relative;
     width: 100%;
     max-width: none;
     padding-bottom: 40px;
   }
-  .item-id {
+  .about .about-item .item-id {
     position: absolute;
     top: 0;
     left: 20px;
     z-index: 1000;
     padding: 10px 25px;
   }
-  .item-description {
+  .about .about-item .item-description {
     padding-top: 0;
     margin-left: 0;
     position: relative;
     width: 100%;
   }
-  .item-description h3 {
+  .about .about-item .item-description h3 {
     position: absolute;
     top: 0;
     left: 60px;
@@ -648,7 +647,7 @@ li.slick-active button {
     padding: 10px 0px 6px 30px;
     overflow: hidden;
   }
-  .item-description p {
+  .about .about-item .item-description p {
     position: relative;
     top: 40px;
     left: 30px;
@@ -660,11 +659,11 @@ li.slick-active button {
 }
 
 @media (max-width: 350px) {
-  h1 {
-    font-size: 28px;
-  }
-  .introduction figure img {
+  .introduction img {
     height: 250px;
+  }
+  .introduction h1 {
+    font-size: 28px;
   }
   .slider-item p {
     max-width: 250px;
