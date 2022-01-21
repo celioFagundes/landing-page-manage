@@ -10,7 +10,7 @@ body {
   width: 100%;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
-  background: url('/images/bg-simplify-section-desktop.svg');
+  background: url('images/bg-simplify-section-desktop.svg');
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 40px;
@@ -372,7 +372,7 @@ h3 {
   }
 
   .menu-icon.responsive {
-    background-image: url(/images/icon-close.svg);
+    background-image: url('/images/icon-close.svg');
   }
   .introduction {
     flex-wrap: wrap;
