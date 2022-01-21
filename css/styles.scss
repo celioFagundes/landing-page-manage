@@ -1,5 +1,6 @@
 @import './variables.scss';
 
+//'https://celiofagundes.github.io/landing-page-manage/images/top-bg-vector.svg'
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +11,12 @@ body {
   width: 100%;
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
-  background: url('images/bg-simplify-section-desktop.svg');
-  background-size: contain;
+  background-image: url('https://celiofagundes.github.io/landing-page-manage/images/top-bg-vector.svg'),
+  url('https://celiofagundes.github.io/landing-page-manage/images/center-bg-vector.svg');
+  background-size: auto;
+  background-position: top right, left 57%;
+  
+ 
   background-repeat: no-repeat;
   padding-top: 40px;
 }
@@ -341,6 +346,11 @@ h3 {
   }
 }
 @media (max-width: 800px) {
+  body{
+    background-image: url('https://celiofagundes.github.io/landing-page-manage/images/tablet-top-bg.svg'),
+    url('https://celiofagundes.github.io/landing-page-manage/images/tablet-center-bg.svg');
+    background-position: top right, right center;
+  }
   .topnav .btn {
     display: none;
   }
@@ -359,6 +369,7 @@ h3 {
     text-align: center;
     padding: 40px;
     background-color: #fff;
+    z-index: 2000;
     top: 100px;
     transition: all 0.3s;
     border-radius: 5px;
@@ -445,14 +456,21 @@ h3 {
   }
 }
 @media (max-width: 450px) {
-  
+
+  body{
+    background-image: url('https://celiofagundes.github.io/landing-page-manage/images/mobile-top-bg-vector.svg'),
+    url('https://celiofagundes.github.io/landing-page-manage/images/mobile-center-bg-vector.svg');
+    background-position: top right, right 22%;
+  }
   .introduction {
+    padding-bottom: 40px;
     img {
       height: 300px;
     }
     h1 {
       font-size: 32px;
     }
+    
   }
 
   .about {
