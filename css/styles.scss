@@ -316,6 +316,7 @@ h3 {
       }
     }
     .copyright {
+      margin-top: 50px;
       font-size: 10px;
       align-self: flex-end;
       color: $darkGrayishBlue;
@@ -414,6 +415,7 @@ h3 {
         flex-direction: column-reverse;
         align-items: center;
         width: 100%;
+       
         position: relative;
         .contacts {
           display: flex;
@@ -421,6 +423,9 @@ h3 {
           align-items: center;
           justify-content: space-between;
           width: 100%;
+          img{
+            padding-bottom: 40px;
+          }
           .social-medias {
             padding-top: 0;
             width: 70%;

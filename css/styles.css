@@ -440,6 +440,7 @@ h3 {
 }
 
 .bottom-footer .signin .copyright {
+  margin-top: 50px;
   font-size: 10px;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -577,6 +578,9 @@ h3 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
+  }
+  .bottom-footer .bfooter-box .contacts img {
+    padding-bottom: 40px;
   }
   .bottom-footer .bfooter-box .contacts .social-medias {
     padding-top: 0;
