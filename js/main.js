@@ -50,3 +50,16 @@ function submitFunction() {
       form.submit()
     }
 }
+
+var width;
+$(window).resize(function() {
+  let links = document.getElementById('myTopnav')
+  let btn = document.getElementById('menu-toggle')
+  body = document.querySelector('body')
+  width = $(window).width();
+  
+  if(width >= 800 && links.className === 'links responsive'){
+    myFunction()
+    console.log('pass')
+  }
+});
